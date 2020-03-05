@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="DropDownView" id="iN0-l3-epB" customClass="DropDownView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W3s-x2-qdm">
+                    <rect key="frame" x="8" y="184" width="304" height="200"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="js4-Py-IEA"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="YZ0-82-KQI"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="SCk-cw-o2B"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.19774721746575341" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="W3s-x2-qdm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="DnO-B4-bVK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="W3s-x2-qdm" secondAttribute="bottom" constant="184" id="SWt-lN-Hdh"/>
+                <constraint firstItem="W3s-x2-qdm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="164" id="dAR-9S-TYN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="W3s-x2-qdm" secondAttribute="trailing" constant="8" id="nRX-GG-gWr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="nslcTableBottom" destination="SWt-lN-Hdh" id="KBv-pl-t37"/>
+                <outlet property="nslcTableTop" destination="dAR-9S-TYN" id="XWw-JU-ulG"/>
+                <outlet property="nslcTblOptionHeight" destination="js4-Py-IEA" id="mmS-1C-qYf"/>
+                <outlet property="tblOptions" destination="W3s-x2-qdm" id="Tix-oe-ela"/>
+            </connections>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ViewCarGarage" translatesAutoresizingMaskIntoConstraints="NO" id="kVA-iD-CDs" customClass="ViewCarGarage">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfv-fr-TUj" customClass="StepperView">
+                    <rect key="frame" x="0.0" y="2" width="90" height="31"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7L-BZ-OeB">
+                            <rect key="frame" x="0.0" y="0.0" width="31" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="N7L-BZ-OeB" secondAttribute="height" multiplier="1:1" id="4bn-XA-wMc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="-">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="btnMinusPressed:" destination="Bfv-fr-TUj" eventType="touchUpInside" id="hE9-wG-zPf"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ci-ZR-WBC">
+                            <rect key="frame" x="31" y="0.0" width="28" height="31"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqG-ph-rPi">
+                            <rect key="frame" x="59" y="0.0" width="31" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="nqG-ph-rPi" secondAttribute="height" multiplier="1:1" id="6We-2B-js6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="+">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="btnPlusPressed:" destination="Bfv-fr-TUj" eventType="touchUpInside" id="i5v-jm-9On"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="5Ci-ZR-WBC" firstAttribute="leading" secondItem="N7L-BZ-OeB" secondAttribute="trailing" id="23c-q0-oN9"/>
+                        <constraint firstItem="nqG-ph-rPi" firstAttribute="leading" secondItem="5Ci-ZR-WBC" secondAttribute="trailing" id="2TR-NJ-cef"/>
+                        <constraint firstAttribute="bottom" secondItem="N7L-BZ-OeB" secondAttribute="bottom" id="883-6b-wgY"/>
+                        <constraint firstItem="5Ci-ZR-WBC" firstAttribute="top" secondItem="Bfv-fr-TUj" secondAttribute="top" id="Izs-A1-PBm"/>
+                        <constraint firstItem="N7L-BZ-OeB" firstAttribute="top" secondItem="Bfv-fr-TUj" secondAttribute="top" id="YuA-zP-LuN"/>
+                        <constraint firstAttribute="bottom" secondItem="nqG-ph-rPi" secondAttribute="bottom" id="b11-QZ-lvq"/>
+                        <constraint firstAttribute="bottom" secondItem="5Ci-ZR-WBC" secondAttribute="bottom" id="dMT-Nh-FiG"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="gBI-6I-Mc8"/>
+                        <constraint firstItem="nqG-ph-rPi" firstAttribute="top" secondItem="Bfv-fr-TUj" secondAttribute="top" id="lDH-vJ-75v"/>
+                        <constraint firstAttribute="trailing" secondItem="nqG-ph-rPi" secondAttribute="trailing" id="vsC-vh-lJn"/>
+                        <constraint firstItem="N7L-BZ-OeB" firstAttribute="leading" secondItem="Bfv-fr-TUj" secondAttribute="leading" id="zhw-eb-3qB"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="lblCounter" destination="5Ci-ZR-WBC" id="bKV-dF-YeN"/>
+                    </connections>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="car garage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvl-La-APE">
+                    <rect key="frame" x="105" y="0.0" width="82" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdi-XF-Klm">
+                    <rect key="frame" x="202" y="4" width="27" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Zdi-XF-Klm" secondAttribute="height" multiplier="1:1" id="JrD-Ww-8Xv"/>
+                        <constraint firstAttribute="width" constant="27" id="uw3-9a-XJt"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="1" maxY="0.0"/>
+                    <state key="normal" image="uncheck.png"/>
+                    <state key="selected" image="checked.png"/>
+                    <connections>
+                        <action selector="btnAttachPressed:" destination="kVA-iD-CDs" eventType="touchUpInside" id="QXU-Sg-AD0"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="attached" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="k1o-ok-dUV">
+                    <rect key="frame" x="234" y="8.5" width="64" height="18"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oM-0O-c0x">
+                    <rect key="frame" x="280" y="2.5" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="TyL-AO-l6s"/>
+                        <constraint firstAttribute="width" secondItem="4oM-0O-c0x" secondAttribute="height" multiplier="1:1" id="p4N-KS-beZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="-">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="btnRemoveTapped:" destination="kVA-iD-CDs" eventType="touchUpInside" id="Ouq-ry-JMG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Zdi-XF-Klm" firstAttribute="leading" secondItem="rvl-La-APE" secondAttribute="trailing" constant="15" id="ChA-9Z-5QI"/>
+                <constraint firstItem="k1o-ok-dUV" firstAttribute="centerY" secondItem="kVA-iD-CDs" secondAttribute="centerY" id="Jll-23-PRt"/>
+                <constraint firstAttribute="bottom" secondItem="Bfv-fr-TUj" secondAttribute="bottom" constant="2" id="LqP-2l-3dK"/>
+                <constraint firstAttribute="bottom" secondItem="rvl-La-APE" secondAttribute="bottom" id="NaC-o0-crq"/>
+                <constraint firstItem="rvl-La-APE" firstAttribute="top" secondItem="kVA-iD-CDs" secondAttribute="top" id="O1w-SC-mYV"/>
+                <constraint firstItem="4oM-0O-c0x" firstAttribute="centerY" secondItem="kVA-iD-CDs" secondAttribute="centerY" id="Stu-1a-XmZ"/>
+                <constraint firstAttribute="trailing" secondItem="4oM-0O-c0x" secondAttribute="trailing" constant="10" id="XfK-rE-QyT"/>
+                <constraint firstItem="k1o-ok-dUV" firstAttribute="leading" secondItem="Zdi-XF-Klm" secondAttribute="trailing" constant="5" id="bwQ-dI-iEH"/>
+                <constraint firstItem="Zdi-XF-Klm" firstAttribute="centerY" secondItem="kVA-iD-CDs" secondAttribute="centerY" id="cx3-qI-IQJ"/>
+                <constraint firstItem="rvl-La-APE" firstAttribute="leading" secondItem="Bfv-fr-TUj" secondAttribute="trailing" constant="15" id="gqq-u0-OXa"/>
+                <constraint firstItem="Bfv-fr-TUj" firstAttribute="top" secondItem="kVA-iD-CDs" secondAttribute="top" constant="2" id="oQ0-7G-VvR"/>
+                <constraint firstItem="Bfv-fr-TUj" firstAttribute="leading" secondItem="kVA-iD-CDs" secondAttribute="leading" id="qZg-zr-zbG"/>
+                <constraint firstAttribute="height" constant="35" id="siz-Ff-ca9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="eK1-br-HDP"/>
+            <connections>
+                <outlet property="btnAttach" destination="Zdi-XF-Klm" id="CKh-84-QuG"/>
+                <outlet property="btnRemove" destination="4oM-0O-c0x" id="wbz-7I-Sif"/>
+                <outlet property="stepperCarGarage" destination="Bfv-fr-TUj" id="VeH-oX-xdR"/>
+            </connections>
+            <point key="canvasLocation" x="-114.375" y="-355.98591549295776"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checked.png" width="64" height="64"/>
+        <image name="uncheck.png" width="48" height="48"/>
+    </resources>
+</document>

@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03E6C0805C1481399EBA76AF /* libPods-ClaimMateReport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C64FCBFB31B876FA146C07D /* libPods-ClaimMateReport.a */; };
+		843126CB2190A8DB00F25B03 /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 843126AF2190A8DB00F25B03 /* ImageCache.m */; };
+		843126CC2190A8DB00F25B03 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 843126B22190A8DB00F25B03 /* Reachability.m */; };
+		843126CD2190A8DB00F25B03 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 843126BC2190A8DB00F25B03 /* AFURLResponseSerialization.m */; };
+		843126CE2190A8DB00F25B03 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 843126BD2190A8DB00F25B03 /* AFHTTPSessionManager.m */; };
+		843126CF2190A8DB00F25B03 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 843126BE2190A8DB00F25B03 /* AFURLConnectionOperation.m */; };
+		843126D02190A8DB00F25B03 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 843126C02190A8DB00F25B03 /* AFURLSessionManager.m */; };
+		843126D12190A8DB00F25B03 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 843126C12190A8DB00F25B03 /* AFHTTPRequestOperationManager.m */; };
+		843126D22190A8DB00F25B03 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 843126C22190A8DB00F25B03 /* AFURLRequestSerialization.m */; };
+		843126D32190A8DB00F25B03 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 843126C32190A8DB00F25B03 /* AFHTTPRequestOperation.m */; };
+		843126D42190A8DB00F25B03 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 843126C52190A8DB00F25B03 /* AFNetworkReachabilityManager.m */; };
+		843126D52190A8DB00F25B03 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 843126C62190A8DB00F25B03 /* AFSecurityPolicy.m */; };
+		843126D62190A8DB00F25B03 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 843126C92190A8DB00F25B03 /* MBProgressHUD.m */; };
+		8437CCA3219AABA000812990 /* ReportVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8437CCA2219AABA000812990 /* ReportVC.m */; };
+		8437CCA6219AF91600812990 /* ForgotPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8437CCA4219AF91600812990 /* ForgotPasswordVC.m */; };
+		84A3E076218D981100D80D07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3E075218D981100D80D07 /* AppDelegate.m */; };
+		84A3E079218D981100D80D07 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3E078218D981100D80D07 /* LoginVC.m */; };
+		84A3E07C218D981100D80D07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A3E07A218D981100D80D07 /* Main.storyboard */; };
+		84A3E07E218D981700D80D07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A3E07D218D981700D80D07 /* Assets.xcassets */; };
+		84A3E081218D981700D80D07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A3E07F218D981700D80D07 /* LaunchScreen.storyboard */; };
+		84A3E084218D981700D80D07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3E083218D981700D80D07 /* main.m */; };
+		84A3E08D218D9ED200D80D07 /* app_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A3E08C218D9ED200D80D07 /* app_logo.png */; };
+		84A3E090218DAE6B00D80D07 /* SignUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3E08F218DAE6B00D80D07 /* SignUpVC.m */; };
+		84A3E095218DC26300D80D07 /* ReportsVCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3E091218DC26300D80D07 /* ReportsVCCell.m */; };
+		84A3E096218DC26300D80D07 /* ReportsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3E093218DC26300D80D07 /* ReportsVC.m */; };
+		84A3E098218DC41B00D80D07 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A3E097218DC41B00D80D07 /* back.png */; };
+		84A3E09A218DC65A00D80D07 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A3E099218DC65A00D80D07 /* plus.png */; };
+		84A46CD12192A5CE008DCB39 /* claimmatedb.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 84A46CD02192A5CE008DCB39 /* claimmatedb.sqlite */; };
+		84A46CD42192AC47008DCB39 /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A46CD32192AC47008DCB39 /* SettingsVC.m */; };
+		84A46CD72192AF92008DCB39 /* AddValueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A46CD62192AF92008DCB39 /* AddValueVC.m */; };
+		84A46CDA2192B704008DCB39 /* SubValueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A46CD92192B704008DCB39 /* SubValueVC.m */; };
+		84A46CDD2192F4E6008DCB39 /* SubValueVCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A46CDB2192F4E5008DCB39 /* SubValueVCCell.m */; };
+		84A46CE22193012C008DCB39 /* DropDownVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A46CE02193012C008DCB39 /* DropDownVC.m */; };
+		84A46CE32193012C008DCB39 /* DropDownVCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A46CE12193012C008DCB39 /* DropDownVCCell.m */; };
+		84B8B9DE2197DE0400DA7B2E /* EditReportVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B8B9DD2197DE0400DA7B2E /* EditReportVC.m */; };
+		84D0EC8E218EB6EA001B372C /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0EC8D218EB6E9001B372C /* next.png */; };
+		84D0EC91218ECA4C001B372C /* CreateReportVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D0EC8F218ECA4C001B372C /* CreateReportVC.m */; };
+		84D0EC94218F0020001B372C /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0EC92218F0020001B372C /* checked.png */; };
+		84D0EC95218F0020001B372C /* uncheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0EC93218F0020001B372C /* uncheck.png */; };
+		84DFE98821969D97006AE156 /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DFE98721969D96006AE156 /* right_arrow.png */; };
+		84DFE98A21969F2C006AE156 /* down_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DFE98921969F2B006AE156 /* down_arrow.png */; };
+		9A01E68D234BA00600A6977D /* DropDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A01E68C234BA00600A6977D /* DropDownView.m */; };
+		9A01E68F234BA01100A6977D /* DropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A01E68E234BA01100A6977D /* DropDownView.xib */; };
+		9A01E693234BA08400A6977D /* DropDownViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A01E691234BA08400A6977D /* DropDownViewCell.m */; };
+		9A01E694234BA08400A6977D /* DropDownViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A01E692234BA08400A6977D /* DropDownViewCell.xib */; };
+		9A26B179234905DF009D4F23 /* StepperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A26B178234905DF009D4F23 /* StepperView.m */; };
+		9A26B17E23490C82009D4F23 /* NewReportVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A26B17D23490C82009D4F23 /* NewReportVC.m */; };
+		9A26B18323491AFF009D4F23 /* SelectableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A26B18223491AFF009D4F23 /* SelectableView.m */; };
+		9A26B18523491B0D009D4F23 /* SelectableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A26B18423491B0D009D4F23 /* SelectableView.xib */; };
+		9ABB5A1A2349D25500D39A10 /* BorderedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABB5A192349D25500D39A10 /* BorderedView.m */; };
+		9ABB5A1D2349D7D400D39A10 /* CustomField.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABB5A1C2349D7D400D39A10 /* CustomField.m */; };
+		9ABB5A21234A431D00D39A10 /* ViewCarGarage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABB5A20234A431D00D39A10 /* ViewCarGarage.m */; };
+		9ABB5A23234A432C00D39A10 /* ViewCarGarage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ABB5A22234A432C00D39A10 /* ViewCarGarage.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C64FCBFB31B876FA146C07D /* libPods-ClaimMateReport.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClaimMateReport.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F7ABB80607250206703D073 /* Pods-ClaimMateReport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClaimMateReport.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClaimMateReport/Pods-ClaimMateReport.release.xcconfig"; sourceTree = "<group>"; };
+		843126AF2190A8DB00F25B03 /* ImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCache.m; sourceTree = "<group>"; };
+		843126B02190A8DB00F25B03 /* ImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCache.h; sourceTree = "<group>"; };
+		843126B22190A8DB00F25B03 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		843126B32190A8DB00F25B03 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		843126B52190A8DB00F25B03 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		843126B62190A8DB00F25B03 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		843126B72190A8DB00F25B03 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		843126B82190A8DB00F25B03 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		843126B92190A8DB00F25B03 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		843126BA2190A8DB00F25B03 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		843126BB2190A8DB00F25B03 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		843126BC2190A8DB00F25B03 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		843126BD2190A8DB00F25B03 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		843126BE2190A8DB00F25B03 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		843126BF2190A8DB00F25B03 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		843126C02190A8DB00F25B03 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		843126C12190A8DB00F25B03 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		843126C22190A8DB00F25B03 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		843126C32190A8DB00F25B03 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		843126C42190A8DB00F25B03 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		843126C52190A8DB00F25B03 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		843126C62190A8DB00F25B03 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		843126C72190A8DB00F25B03 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		843126C92190A8DB00F25B03 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		843126CA2190A8DB00F25B03 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		8437CCA1219AABA000812990 /* ReportVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportVC.h; sourceTree = "<group>"; };
+		8437CCA2219AABA000812990 /* ReportVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportVC.m; sourceTree = "<group>"; };
+		8437CCA4219AF91600812990 /* ForgotPasswordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordVC.m; sourceTree = "<group>"; };
+		8437CCA5219AF91600812990 /* ForgotPasswordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordVC.h; sourceTree = "<group>"; };
+		84A3E071218D981100D80D07 /* ClaimMateReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClaimMateReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A3E074218D981100D80D07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84A3E075218D981100D80D07 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84A3E077218D981100D80D07 /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		84A3E078218D981100D80D07 /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		84A3E07B218D981100D80D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84A3E07D218D981700D80D07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84A3E080218D981700D80D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84A3E082218D981700D80D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A3E083218D981700D80D07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84A3E08A218D9C1E00D80D07 /* ClaimMateReport-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClaimMateReport-Prefix.pch"; sourceTree = "<group>"; };
+		84A3E08C218D9ED200D80D07 /* app_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_logo.png; sourceTree = "<group>"; };
+		84A3E08E218DAE6B00D80D07 /* SignUpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpVC.h; sourceTree = "<group>"; };
+		84A3E08F218DAE6B00D80D07 /* SignUpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpVC.m; sourceTree = "<group>"; };
+		84A3E091218DC26300D80D07 /* ReportsVCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportsVCCell.m; sourceTree = "<group>"; };
+		84A3E092218DC26300D80D07 /* ReportsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportsVC.h; sourceTree = "<group>"; };
+		84A3E093218DC26300D80D07 /* ReportsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportsVC.m; sourceTree = "<group>"; };
+		84A3E094218DC26300D80D07 /* ReportsVCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportsVCCell.h; sourceTree = "<group>"; };
+		84A3E097218DC41B00D80D07 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		84A3E099218DC65A00D80D07 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		84A46CD02192A5CE008DCB39 /* claimmatedb.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = claimmatedb.sqlite; sourceTree = "<group>"; };
+		84A46CD22192AC47008DCB39 /* SettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsVC.h; sourceTree = "<group>"; };
+		84A46CD32192AC47008DCB39 /* SettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsVC.m; sourceTree = "<group>"; };
+		84A46CD52192AF92008DCB39 /* AddValueVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddValueVC.h; sourceTree = "<group>"; };
+		84A46CD62192AF92008DCB39 /* AddValueVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddValueVC.m; sourceTree = "<group>"; };
+		84A46CD82192B704008DCB39 /* SubValueVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubValueVC.h; sourceTree = "<group>"; };
+		84A46CD92192B704008DCB39 /* SubValueVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubValueVC.m; sourceTree = "<group>"; };
+		84A46CDB2192F4E5008DCB39 /* SubValueVCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubValueVCCell.m; sourceTree = "<group>"; };
+		84A46CDC2192F4E5008DCB39 /* SubValueVCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubValueVCCell.h; sourceTree = "<group>"; };
+		84A46CDE2193012C008DCB39 /* DropDownVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownVC.h; sourceTree = "<group>"; };
+		84A46CDF2193012C008DCB39 /* DropDownVCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownVCCell.h; sourceTree = "<group>"; };
+		84A46CE02193012C008DCB39 /* DropDownVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownVC.m; sourceTree = "<group>"; };
+		84A46CE12193012C008DCB39 /* DropDownVCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownVCCell.m; sourceTree = "<group>"; };
+		84B8B9DC2197DE0400DA7B2E /* EditReportVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditReportVC.h; sourceTree = "<group>"; };
+		84B8B9DD2197DE0400DA7B2E /* EditReportVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditReportVC.m; sourceTree = "<group>"; };
+		84D0EC8D218EB6E9001B372C /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
+		84D0EC8F218ECA4C001B372C /* CreateReportVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateReportVC.m; sourceTree = "<group>"; };
+		84D0EC90218ECA4C001B372C /* CreateReportVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateReportVC.h; sourceTree = "<group>"; };
+		84D0EC92218F0020001B372C /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
+		84D0EC93218F0020001B372C /* uncheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uncheck.png; sourceTree = "<group>"; };
+		84DFE98721969D96006AE156 /* right_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_arrow.png; sourceTree = "<group>"; };
+		84DFE98921969F2B006AE156 /* down_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down_arrow.png; sourceTree = "<group>"; };
+		9A01E68B234BA00600A6977D /* DropDownView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropDownView.h; sourceTree = "<group>"; };
+		9A01E68C234BA00600A6977D /* DropDownView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropDownView.m; sourceTree = "<group>"; };
+		9A01E68E234BA01100A6977D /* DropDownView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownView.xib; sourceTree = "<group>"; };
+		9A01E690234BA08400A6977D /* DropDownViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropDownViewCell.h; sourceTree = "<group>"; };
+		9A01E691234BA08400A6977D /* DropDownViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropDownViewCell.m; sourceTree = "<group>"; };
+		9A01E692234BA08400A6977D /* DropDownViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownViewCell.xib; sourceTree = "<group>"; };
+		9A26B177234905DF009D4F23 /* StepperView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StepperView.h; sourceTree = "<group>"; };
+		9A26B178234905DF009D4F23 /* StepperView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StepperView.m; sourceTree = "<group>"; };
+		9A26B17C23490C82009D4F23 /* NewReportVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewReportVC.h; sourceTree = "<group>"; };
+		9A26B17D23490C82009D4F23 /* NewReportVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewReportVC.m; sourceTree = "<group>"; };
+		9A26B18123491AFF009D4F23 /* SelectableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectableView.h; sourceTree = "<group>"; };
+		9A26B18223491AFF009D4F23 /* SelectableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectableView.m; sourceTree = "<group>"; };
+		9A26B18423491B0D009D4F23 /* SelectableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectableView.xib; sourceTree = "<group>"; };
+		9ABB5A182349D25500D39A10 /* BorderedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BorderedView.h; sourceTree = "<group>"; };
+		9ABB5A192349D25500D39A10 /* BorderedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BorderedView.m; sourceTree = "<group>"; };
+		9ABB5A1B2349D7D400D39A10 /* CustomField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomField.h; sourceTree = "<group>"; };
+		9ABB5A1C2349D7D400D39A10 /* CustomField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomField.m; sourceTree = "<group>"; };
+		9ABB5A1F234A431D00D39A10 /* ViewCarGarage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewCarGarage.h; sourceTree = "<group>"; };
+		9ABB5A20234A431D00D39A10 /* ViewCarGarage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewCarGarage.m; sourceTree = "<group>"; };
+		9ABB5A22234A432C00D39A10 /* ViewCarGarage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewCarGarage.xib; sourceTree = "<group>"; };
+		D3DB71FB571E479E629BA3AA /* Pods-ClaimMateReport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClaimMateReport.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClaimMateReport/Pods-ClaimMateReport.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84A3E06E218D981100D80D07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E6C0805C1481399EBA76AF /* libPods-ClaimMateReport.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B831394C2B05CBFCBBED85F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3DB71FB571E479E629BA3AA /* Pods-ClaimMateReport.debug.xcconfig */,
+				2F7ABB80607250206703D073 /* Pods-ClaimMateReport.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6DF5BFB9A123DF2C871BD9B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C64FCBFB31B876FA146C07D /* libPods-ClaimMateReport.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		843126AD2190A8DB00F25B03 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				843126AE2190A8DB00F25B03 /* ImageCache */,
+				843126B12190A8DB00F25B03 /* Reachability */,
+				843126B42190A8DB00F25B03 /* AFNetworking */,
+				843126C82190A8DB00F25B03 /* MBProgressHUD */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		843126AE2190A8DB00F25B03 /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				843126AF2190A8DB00F25B03 /* ImageCache.m */,
+				843126B02190A8DB00F25B03 /* ImageCache.h */,
+			);
+			path = ImageCache;
+			sourceTree = "<group>";
+		};
+		843126B12190A8DB00F25B03 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				843126B22190A8DB00F25B03 /* Reachability.m */,
+				843126B32190A8DB00F25B03 /* Reachability.h */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		843126B42190A8DB00F25B03 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				843126B52190A8DB00F25B03 /* AFSecurityPolicy.h */,
+				843126B62190A8DB00F25B03 /* AFNetworkReachabilityManager.h */,
+				843126B72190A8DB00F25B03 /* AFHTTPRequestOperation.h */,
+				843126B82190A8DB00F25B03 /* AFHTTPRequestOperationManager.h */,
+				843126B92190A8DB00F25B03 /* AFURLSessionManager.h */,
+				843126BA2190A8DB00F25B03 /* AFURLRequestSerialization.h */,
+				843126BB2190A8DB00F25B03 /* AFURLConnectionOperation.h */,
+				843126BC2190A8DB00F25B03 /* AFURLResponseSerialization.m */,
+				843126BD2190A8DB00F25B03 /* AFHTTPSessionManager.m */,
+				843126BE2190A8DB00F25B03 /* AFURLConnectionOperation.m */,
+				843126BF2190A8DB00F25B03 /* AFURLResponseSerialization.h */,
+				843126C02190A8DB00F25B03 /* AFURLSessionManager.m */,
+				843126C12190A8DB00F25B03 /* AFHTTPRequestOperationManager.m */,
+				843126C22190A8DB00F25B03 /* AFURLRequestSerialization.m */,
+				843126C32190A8DB00F25B03 /* AFHTTPRequestOperation.m */,
+				843126C42190A8DB00F25B03 /* AFNetworking.h */,
+				843126C52190A8DB00F25B03 /* AFNetworkReachabilityManager.m */,
+				843126C62190A8DB00F25B03 /* AFSecurityPolicy.m */,
+				843126C72190A8DB00F25B03 /* AFHTTPSessionManager.h */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		843126C82190A8DB00F25B03 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				843126C92190A8DB00F25B03 /* MBProgressHUD.m */,
+				843126CA2190A8DB00F25B03 /* MBProgressHUD.h */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		84A3E068218D981000D80D07 = {
+			isa = PBXGroup;
+			children = (
+				84A3E08A218D9C1E00D80D07 /* ClaimMateReport-Prefix.pch */,
+				84A3E073218D981100D80D07 /* ClaimMateReport */,
+				84A3E072218D981100D80D07 /* Products */,
+				6B831394C2B05CBFCBBED85F /* Pods */,
+				6DF5BFB9A123DF2C871BD9B3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84A3E072218D981100D80D07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84A3E071218D981100D80D07 /* ClaimMateReport.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84A3E073218D981100D80D07 /* ClaimMateReport */ = {
+			isa = PBXGroup;
+			children = (
+				9A26B176234905AD009D4F23 /* Others */,
+				84A3E074218D981100D80D07 /* AppDelegate.h */,
+				84A3E075218D981100D80D07 /* AppDelegate.m */,
+				84A3E077218D981100D80D07 /* LoginVC.h */,
+				84A3E078218D981100D80D07 /* LoginVC.m */,
+				84A3E08E218DAE6B00D80D07 /* SignUpVC.h */,
+				84A3E08F218DAE6B00D80D07 /* SignUpVC.m */,
+				8437CCA5219AF91600812990 /* ForgotPasswordVC.h */,
+				8437CCA4219AF91600812990 /* ForgotPasswordVC.m */,
+				84A3E092218DC26300D80D07 /* ReportsVC.h */,
+				84A3E093218DC26300D80D07 /* ReportsVC.m */,
+				84A3E094218DC26300D80D07 /* ReportsVCCell.h */,
+				84A3E091218DC26300D80D07 /* ReportsVCCell.m */,
+				84D0EC90218ECA4C001B372C /* CreateReportVC.h */,
+				84D0EC8F218ECA4C001B372C /* CreateReportVC.m */,
+				84B8B9DC2197DE0400DA7B2E /* EditReportVC.h */,
+				84B8B9DD2197DE0400DA7B2E /* EditReportVC.m */,
+				84A46CD22192AC47008DCB39 /* SettingsVC.h */,
+				84A46CD32192AC47008DCB39 /* SettingsVC.m */,
+				84A46CD52192AF92008DCB39 /* AddValueVC.h */,
+				84A46CD62192AF92008DCB39 /* AddValueVC.m */,
+				84A46CD82192B704008DCB39 /* SubValueVC.h */,
+				84A46CD92192B704008DCB39 /* SubValueVC.m */,
+				84A46CDC2192F4E5008DCB39 /* SubValueVCCell.h */,
+				84A46CDB2192F4E5008DCB39 /* SubValueVCCell.m */,
+				84A46CDE2193012C008DCB39 /* DropDownVC.h */,
+				84A46CE02193012C008DCB39 /* DropDownVC.m */,
+				84A46CDF2193012C008DCB39 /* DropDownVCCell.h */,
+				84A46CE12193012C008DCB39 /* DropDownVCCell.m */,
+				8437CCA1219AABA000812990 /* ReportVC.h */,
+				8437CCA2219AABA000812990 /* ReportVC.m */,
+				843126AD2190A8DB00F25B03 /* Libraries */,
+				84A3E08B218D9ED200D80D07 /* Images */,
+				84A3E07A218D981100D80D07 /* Main.storyboard */,
+				84A3E07D218D981700D80D07 /* Assets.xcassets */,
+				84A3E07F218D981700D80D07 /* LaunchScreen.storyboard */,
+				84A46CD02192A5CE008DCB39 /* claimmatedb.sqlite */,
+				84A3E082218D981700D80D07 /* Info.plist */,
+				84A3E083218D981700D80D07 /* main.m */,
+				9A26B17C23490C82009D4F23 /* NewReportVC.h */,
+				9A26B17D23490C82009D4F23 /* NewReportVC.m */,
+			);
+			path = ClaimMateReport;
+			sourceTree = "<group>";
+		};
+		84A3E08B218D9ED200D80D07 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				84D0EC92218F0020001B372C /* checked.png */,
+				84D0EC93218F0020001B372C /* uncheck.png */,
+				84A3E097218DC41B00D80D07 /* back.png */,
+				84A3E08C218D9ED200D80D07 /* app_logo.png */,
+				84A3E099218DC65A00D80D07 /* plus.png */,
+				84D0EC8D218EB6E9001B372C /* next.png */,
+				84DFE98721969D96006AE156 /* right_arrow.png */,
+				84DFE98921969F2B006AE156 /* down_arrow.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		9A01E68A234B9F5600A6977D /* DropDownView */ = {
+			isa = PBXGroup;
+			children = (
+				9A01E68B234BA00600A6977D /* DropDownView.h */,
+				9A01E68C234BA00600A6977D /* DropDownView.m */,
+				9A01E68E234BA01100A6977D /* DropDownView.xib */,
+				9A01E690234BA08400A6977D /* DropDownViewCell.h */,
+				9A01E691234BA08400A6977D /* DropDownViewCell.m */,
+				9A01E692234BA08400A6977D /* DropDownViewCell.xib */,
+			);
+			path = DropDownView;
+			sourceTree = "<group>";
+		};
+		9A26B176234905AD009D4F23 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				9A01E68A234B9F5600A6977D /* DropDownView */,
+				9ABB5A1E234A42FE00D39A10 /* ViewCarGarage */,
+				9ABB5A172349D23E00D39A10 /* BorderedView */,
+				9A26B18023491ADF009D4F23 /* SelectableView */,
+				9A26B17F23491AD4009D4F23 /* Stepper */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		9A26B17F23491AD4009D4F23 /* Stepper */ = {
+			isa = PBXGroup;
+			children = (
+				9A26B177234905DF009D4F23 /* StepperView.h */,
+				9A26B178234905DF009D4F23 /* StepperView.m */,
+			);
+			path = Stepper;
+			sourceTree = "<group>";
+		};
+		9A26B18023491ADF009D4F23 /* SelectableView */ = {
+			isa = PBXGroup;
+			children = (
+				9A26B18123491AFF009D4F23 /* SelectableView.h */,
+				9A26B18223491AFF009D4F23 /* SelectableView.m */,
+				9A26B18423491B0D009D4F23 /* SelectableView.xib */,
+			);
+			path = SelectableView;
+			sourceTree = "<group>";
+		};
+		9ABB5A172349D23E00D39A10 /* BorderedView */ = {
+			isa = PBXGroup;
+			children = (
+				9ABB5A182349D25500D39A10 /* BorderedView.h */,
+				9ABB5A192349D25500D39A10 /* BorderedView.m */,
+				9ABB5A1B2349D7D400D39A10 /* CustomField.h */,
+				9ABB5A1C2349D7D400D39A10 /* CustomField.m */,
+			);
+			path = BorderedView;
+			sourceTree = "<group>";
+		};
+		9ABB5A1E234A42FE00D39A10 /* ViewCarGarage */ = {
+			isa = PBXGroup;
+			children = (
+				9ABB5A1F234A431D00D39A10 /* ViewCarGarage.h */,
+				9ABB5A20234A431D00D39A10 /* ViewCarGarage.m */,
+				9ABB5A22234A432C00D39A10 /* ViewCarGarage.xib */,
+			);
+			path = ViewCarGarage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84A3E070218D981100D80D07 /* ClaimMateReport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A3E087218D981700D80D07 /* Build configuration list for PBXNativeTarget "ClaimMateReport" */;
+			buildPhases = (
+				B2943B5CFE6024508AA8400B /* [CP] Check Pods Manifest.lock */,
+				84A3E06D218D981100D80D07 /* Sources */,
+				84A3E06E218D981100D80D07 /* Frameworks */,
+				84A3E06F218D981100D80D07 /* Resources */,
+				6D6765135D2A3A39DC2F30FB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClaimMateReport;
+			productName = ClaimMateReport;
+			productReference = 84A3E071218D981100D80D07 /* ClaimMateReport.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84A3E069218D981000D80D07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Admin;
+				TargetAttributes = {
+					84A3E070218D981100D80D07 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 84A3E06C218D981000D80D07 /* Build configuration list for PBXProject "ClaimMateReport" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84A3E068218D981000D80D07;
+			productRefGroup = 84A3E072218D981100D80D07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84A3E070218D981100D80D07 /* ClaimMateReport */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84A3E06F218D981100D80D07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A01E68F234BA01100A6977D /* DropDownView.xib in Resources */,
+				84D0EC8E218EB6EA001B372C /* next.png in Resources */,
+				9A26B18523491B0D009D4F23 /* SelectableView.xib in Resources */,
+				84A3E08D218D9ED200D80D07 /* app_logo.png in Resources */,
+				84DFE98821969D97006AE156 /* right_arrow.png in Resources */,
+				84A3E098218DC41B00D80D07 /* back.png in Resources */,
+				84A3E081218D981700D80D07 /* LaunchScreen.storyboard in Resources */,
+				84A3E07E218D981700D80D07 /* Assets.xcassets in Resources */,
+				84D0EC94218F0020001B372C /* checked.png in Resources */,
+				9ABB5A23234A432C00D39A10 /* ViewCarGarage.xib in Resources */,
+				84A3E07C218D981100D80D07 /* Main.storyboard in Resources */,
+				84A46CD12192A5CE008DCB39 /* claimmatedb.sqlite in Resources */,
+				84A3E09A218DC65A00D80D07 /* plus.png in Resources */,
+				9A01E694234BA08400A6977D /* DropDownViewCell.xib in Resources */,
+				84D0EC95218F0020001B372C /* uncheck.png in Resources */,
+				84DFE98A21969F2C006AE156 /* down_arrow.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D6765135D2A3A39DC2F30FB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ClaimMateReport/Pods-ClaimMateReport-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MMNumberKeyboard/Images/MMNumberKeyboardDeleteKey.png",
+				"${PODS_ROOT}/MMNumberKeyboard/Images/MMNumberKeyboardDeleteKey@2x.png",
+				"${PODS_ROOT}/MMNumberKeyboard/Images/MMNumberKeyboardDeleteKey@3x.png",
+				"${PODS_ROOT}/MMNumberKeyboard/Images/MMNumberKeyboardDismissKey.png",
+				"${PODS_ROOT}/MMNumberKeyboard/Images/MMNumberKeyboardDismissKey@2x.png",
+				"${PODS_ROOT}/MMNumberKeyboard/Images/MMNumberKeyboardDismissKey@3x.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MMNumberKeyboardDeleteKey.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MMNumberKeyboardDeleteKey@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MMNumberKeyboardDeleteKey@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MMNumberKeyboardDismissKey.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MMNumberKeyboardDismissKey@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MMNumberKeyboardDismissKey@3x.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClaimMateReport/Pods-ClaimMateReport-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2943B5CFE6024508AA8400B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClaimMateReport-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84A3E06D218D981100D80D07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A01E68D234BA00600A6977D /* DropDownView.m in Sources */,
+				84A3E096218DC26300D80D07 /* ReportsVC.m in Sources */,
+				84A46CD72192AF92008DCB39 /* AddValueVC.m in Sources */,
+				84B8B9DE2197DE0400DA7B2E /* EditReportVC.m in Sources */,
+				84A46CD42192AC47008DCB39 /* SettingsVC.m in Sources */,
+				84A3E090218DAE6B00D80D07 /* SignUpVC.m in Sources */,
+				8437CCA3219AABA000812990 /* ReportVC.m in Sources */,
+				84A3E095218DC26300D80D07 /* ReportsVCCell.m in Sources */,
+				84A3E079218D981100D80D07 /* LoginVC.m in Sources */,
+				843126D32190A8DB00F25B03 /* AFHTTPRequestOperation.m in Sources */,
+				9A26B17E23490C82009D4F23 /* NewReportVC.m in Sources */,
+				843126D12190A8DB00F25B03 /* AFHTTPRequestOperationManager.m in Sources */,
+				9ABB5A1A2349D25500D39A10 /* BorderedView.m in Sources */,
+				9ABB5A21234A431D00D39A10 /* ViewCarGarage.m in Sources */,
+				8437CCA6219AF91600812990 /* ForgotPasswordVC.m in Sources */,
+				843126CF2190A8DB00F25B03 /* AFURLConnectionOperation.m in Sources */,
+				9A26B18323491AFF009D4F23 /* SelectableView.m in Sources */,
+				843126D62190A8DB00F25B03 /* MBProgressHUD.m in Sources */,
+				843126CD2190A8DB00F25B03 /* AFURLResponseSerialization.m in Sources */,
+				843126CE2190A8DB00F25B03 /* AFHTTPSessionManager.m in Sources */,
+				84D0EC91218ECA4C001B372C /* CreateReportVC.m in Sources */,
+				843126D52190A8DB00F25B03 /* AFSecurityPolicy.m in Sources */,
+				84A3E084218D981700D80D07 /* main.m in Sources */,
+				843126D42190A8DB00F25B03 /* AFNetworkReachabilityManager.m in Sources */,
+				843126CB2190A8DB00F25B03 /* ImageCache.m in Sources */,
+				9A01E693234BA08400A6977D /* DropDownViewCell.m in Sources */,
+				9A26B179234905DF009D4F23 /* StepperView.m in Sources */,
+				84A46CDA2192B704008DCB39 /* SubValueVC.m in Sources */,
+				84A46CE32193012C008DCB39 /* DropDownVCCell.m in Sources */,
+				9ABB5A1D2349D7D400D39A10 /* CustomField.m in Sources */,
+				843126CC2190A8DB00F25B03 /* Reachability.m in Sources */,
+				843126D22190A8DB00F25B03 /* AFURLRequestSerialization.m in Sources */,
+				843126D02190A8DB00F25B03 /* AFURLSessionManager.m in Sources */,
+				84A46CE22193012C008DCB39 /* DropDownVC.m in Sources */,
+				84A46CDD2192F4E6008DCB39 /* SubValueVCCell.m in Sources */,
+				84A3E076218D981100D80D07 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84A3E07A218D981100D80D07 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A3E07B218D981100D80D07 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84A3E07F218D981700D80D07 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A3E080218D981700D80D07 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84A3E085218D981700D80D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7NRAR42PUN;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84A3E086218D981700D80D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7NRAR42PUN;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84A3E088218D981700D80D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3DB71FB571E479E629BA3AA /* Pods-ClaimMateReport.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7NRAR42PUN;
+				GCC_PREFIX_HEADER = "ClaimMateReport-Prefix.pch";
+				INFOPLIST_FILE = ClaimMateReport/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ray.claimmatereport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Claimmate Report Live";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		84A3E089218D981700D80D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F7ABB80607250206703D073 /* Pods-ClaimMateReport.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7NRAR42PUN;
+				GCC_PREFIX_HEADER = "ClaimMateReport-Prefix.pch";
+				INFOPLIST_FILE = ClaimMateReport/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ray.claimmatereport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Claimmate Report Live";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84A3E06C218D981000D80D07 /* Build configuration list for PBXProject "ClaimMateReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A3E085218D981700D80D07 /* Debug */,
+				84A3E086218D981700D80D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A3E087218D981700D80D07 /* Build configuration list for PBXNativeTarget "ClaimMateReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A3E088218D981700D80D07 /* Debug */,
+				84A3E089218D981700D80D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84A3E069218D981000D80D07 /* Project object */;
+}
